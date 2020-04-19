@@ -1,8 +1,10 @@
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
+import { Injectable } from '@angular/core';
 
+@Injectable()
 export class AuthGuard implements CanActivate {
     
-    default = false;
+    default = true;
 
     constructor(
         private router: Router
@@ -11,7 +13,8 @@ export class AuthGuard implements CanActivate {
     canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
         if (this.default) return true;
         else {
-            this.router.navigate(['/auth'])
+            this.router.navigate(['/auth']);
+            return false;
         }
     }
 }

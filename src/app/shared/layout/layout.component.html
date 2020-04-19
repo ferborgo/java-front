@@ -1,0 +1,9 @@
+<div class="admin">
+    <navbar (toggle)="onToggle($event)"></navbar>
+    <div class="content-container">
+        <sidebar *ngIf="mostrarSidebar"></sidebar>
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
