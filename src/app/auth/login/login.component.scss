@@ -1,0 +1,54 @@
+@import '../../../styles/colors.scss';
+
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;    
+
+    .login-intro {
+        width: 70%;
+        background-color: $blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 5px 0 grey;
+
+        .titulo-intro {
+            font-size: 30px;
+            color: white;
+        }
+    }
+
+    .login-form-wrapper {
+        width: 30%;
+        margin-top: 5%;
+
+        h1 {
+            text-align: center;
+        }
+
+        .login-form {
+            margin-left: 15px;
+            margin-right: 15px;
+
+            mat-form-field {
+                width: 100%;
+            }
+        }
+
+        button {
+            width: 100%;
+            background-color: $blue;
+            color: white;
+        }
+
+        .no-tenes-cuenta {
+            margin-top: 25px;
+            text-align: center;
+
+            .registrate {
+                color: $blue;
+            }
+        }
+    }
+}

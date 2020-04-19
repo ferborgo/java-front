@@ -1,0 +1,33 @@
+<div class="login">
+    <div class="login-intro">
+        <div class="titulo-intro">
+            Bienvenido a Banco Alimentario La Plata
+        </div>
+    </div>
+    <div class="login-form-wrapper">
+        <h1>Iniciá sesión</h1>
+        <form class="login-form" [formGroup]="loginForm">
+
+            <mat-form-field appearance="outline">
+                <mat-label> Email </mat-label>
+                <input matInput formControlName="email">
+                <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label> Contraseña </mat-label>
+                <input matInput formControlName="password">
+                <mat-icon matSuffix>vpn_key</mat-icon>
+            </mat-form-field>
+
+            <button mat-button [disabled]="! loginForm.valid">
+                Login
+            </button>
+        </form>
+
+        <div class="no-tenes-cuenta">
+            ¿No tenés cuenta? <span class="registrate"> Registrate </span>
+        </div>
+    </div>
+</div>
+
