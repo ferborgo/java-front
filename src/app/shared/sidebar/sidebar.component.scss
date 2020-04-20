@@ -2,6 +2,37 @@
 
 .sidebar {
     height: 94vh;
-    width: 100px;
+    width: 150px;
     background-color: $blue;
+
+    .nav-list {
+        color: white;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .nav-item {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            .nav-item-titulo {
+                padding-left: 10px;
+            }
+
+            mat-icon {
+                padding-right: 10px;
+            }
+
+            &:hover{
+                background-color: #81d4fa;
+            }
+        }
+    }
 }

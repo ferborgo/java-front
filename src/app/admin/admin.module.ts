@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './admin.routes';
 import { SharedModule } from '../shared/shared.module';
 import { UserListComponent } from './user-list/user-list.component';
+import { MaterialModule } from '../shared/material.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UserListComponent } from './user-list/user-list.component';
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    SharedModule
+    SharedModule,
+    MaterialModule
   ]
 })
 export class AdminModule { }

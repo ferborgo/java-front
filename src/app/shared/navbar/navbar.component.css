@@ -1,0 +1,18 @@
+.navbar {
+  width: 100%;
+  height: 6vh;
+  min-height: 35px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.navbar .toggle-sidebar {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .toggle-sidebar mat-icon {
+  cursor: pointer;
+}

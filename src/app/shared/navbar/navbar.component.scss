@@ -1,14 +1,16 @@
+@import '../../../styles/colors.scss';
+
 .navbar {
     width: 100%;
     height: 6vh;
     min-height: 35px;
-    background-color: black;
+    background-color: $black-fuse;
     color: white;
     display: flex;
     align-items: center;
 
     .toggle-sidebar {
-        width: 100px;
+        width: 150px;
         display: flex;
         align-items: center;
         justify-content: center;

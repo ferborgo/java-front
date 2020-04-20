@@ -46,7 +46,8 @@ const modules = [
 	MatGridListModule,
 	MatDatepickerModule,
 	FormsModule,
-	ReactiveFormsModule
+	ReactiveFormsModule,
+	MatTableModule 
 ];
 
 @NgModule({

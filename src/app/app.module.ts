@@ -15,7 +15,7 @@ import { AuthModule } from './auth/auth.module';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, {enableTracing: true}),
     BrowserAnimationsModule,
     MaterialModule,
     AdminModule,
